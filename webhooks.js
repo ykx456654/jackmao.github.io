@@ -24,6 +24,7 @@ try {
       res.statusCode = 404
       res.end('no such location')
     })
+    console.log('webhook start')
   }).listen(6666)
 }catch(err){
   console.error('Error:', err.message)
