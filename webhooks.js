@@ -10,7 +10,7 @@ function run_cmd(cmd, args, callback) {
   child.stdout.on('end', function() { callback (resp) });
 }
 handler.on('error', function (err) {
-  console.error('Error:', err.message)
+  console.error('Error:', err)
 })
 handler.on('push', function (event) {
   console.log('Received a push event for %s to %s',
@@ -27,5 +27,5 @@ try {
     console.log('webhook start')
   }).listen(6666)
 }catch(err){
-  console.error('Error:', err.message)
+  console.error('Error:', err)
 }
