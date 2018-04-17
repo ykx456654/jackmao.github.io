@@ -1,3 +1,12 @@
+---
+title: RxJS初级指南
+date: 2018-04-17 16:36:53
+tags: [RxJS,stream,Reactive programming]
+categories: web前端
+---
+RxJS初级指南
+=======
+
 # 1. RxJS是什么？
 顾名思义，RxJS是 Reactive programming 的javaScript版本，它起源于  [Reactive Extensions](http://reactivex.io/), 是一个解决异步问题的JS开发库, 带来了观察者模式和函数式编程的相结合的最佳实践，在观察者模式之上，实现了丰富的操作符，适用于各种情况下的序列数据处理。
 # 2. RxJS的基本概念
