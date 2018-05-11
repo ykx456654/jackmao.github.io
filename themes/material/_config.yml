@@ -201,7 +201,7 @@ sidebar:
         divider: false
     pages:
         About:
-            link: "/about"
+            link: "http://resume.jackmao.cn"
             icon: person
             divider: false
     article_num:
@@ -254,7 +254,7 @@ comment:
 #     swiftype | google | local
 search:
     use: google
-    swiftype_key:
+    swiftype_key: 9dYHfzYTs_AvPKRNn28t
 
 # Analytics Systems
 # Available value:
