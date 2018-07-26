@@ -19,9 +19,10 @@ categories: web前端,大前端,native app, web开发者眼中的Flutter
 
 # Flutter有哪些特点
 * 1.更快的开发速度--------支持热更新
-* 2.原生带有艳丽的UI（Material Design）、流畅的动画、丰富的API、丰富的控件系统
+* 2.原生带有艳丽的UI（Material Design）（自带 tree shaking）、流畅的动画、丰富的API、丰富的控件系统
 * 3.数据驱动视图，响应式编程
-  由于笔者是web开发者，所有以下的观点都是从一个web开发者的角度来说的。
+* 4.对比之前的跨平台方案，性能更高，兼容性更好
+  由于是web开发者，所有以下的观点都是从一个web开发者的角度来说的。
 
     
 # Flutter的核心内容
@@ -96,7 +97,21 @@ Flutter提供了一些常用的基础控件：
 * PageView, 单个的页面控件，可以在里面设置子页面, 在需要在当前页面设置多个子页的时候用到，类似于单页web应用的子路由
 * Image, 图片控件, 跟web只需要设置src属性不同， 这里Image加载图片分为加载本地图片(Image.asset(path))跟加载网络图片(Image.network(path))
 * ListView, 列表渲染控件， 相当于react开发里面的 Array.map(renderComponent)
-......... Flutter的控件实在是太多了，想要全部了解得花好多时间。总的来说，个人觉得Flutter写UI没有web那么灵活，但是更加高级（Fultter已经写好了大部分样式；web啥样式都得自己封装，基础样式惨不忍睹），同样的UI跟交互，Flutter写下来Widget tree 可能比 web dom tree复杂好几倍。写Flutter页面，可能一不小心一个文件就写了好几百行。
+......... Flutter的控件实在是太多了，想要全部了解得花好多时间。总的来说，个人觉得Flutter写UI没有web那么灵活，但是更加高级（Fultter已经提供了大部分样式，兼容性好；web啥样式都得自己封装，基础样式惨不忍睹，各个浏览器表现有差异），同样的UI跟交互，Flutter写下来Widget tree 可能比 web dom tree复杂好几倍。写Flutter页面，可能一不小心一个文件就写了好几百行。
 
 
-# Flutter
+# Flutter开发时的不足
+
+## 1.Widget Tree层级过深
+  就如之前所说的, Flutter的一切都是Widget, 从布局到样式再到手势, 都是 Widget, 在页面足够复杂的情况下，没那么好检查Widget Tree。
+
+## 2.开发时状态的跟踪
+  在写demo的过程中，个人感觉最不爽的除了过深的Widget tree之外，就是Flutter开发模式对数据的追踪不够直观，无法从IDE上直接看出State的状态。虽然Flutter提供了[Flutter inspector](https://flutter.io/inspector/)这样的UI调试器，但是作为一个数据驱动视图的开发工具，其界面的核心应该是数据，应该提供类似于React-devTools，Vue-devTools那样可以直接看到数据变化的。
+
+## 3.打包后的包体积
+  写完demo后，打了一个ios的包，发现包的大小居然有30M，可是我只写了300行不到的代码，相比对ReactNative（只有几M） ,Flutter打包的体积要大上不少，希望以后能够优化一下。
+
+
+
+# 开发Flutter的编辑器推荐
+  不推荐使用vscode（缩进有点问题）、sublime这样的轻型编辑器，一是一旦嵌套层数过深，修改起来太麻烦，二是经常要增加包裹控件跟减少控件，手动操作太容易出问题。intelliJ跟Andriod Studio开发Flutter应用要更加方便，可以使用Flutter Inspector(UI inspector)、Flutter outline(可以在选中的控件上增加、删减控件，大大减少了层层嵌套的控件修改时的难度)、保存的时候自动热加载（不用再命令行里手动reload）、代码提示（可以显示Widget所有属性）。
