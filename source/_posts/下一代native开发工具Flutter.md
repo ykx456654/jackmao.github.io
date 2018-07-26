@@ -1,15 +1,21 @@
 ---
-title: 下一代native开发工具Flutter
+title: 下一代跨平台开发工具Flutter
 date: 2018-06-06 16:36:53
-tags: [Flutter,native]
+tags: [Flutter,native,跨平台]
 categories: web前端,大前端,native app, web开发者眼中的Flutter
 ---
-新一代native开发工具Flutter
+下一代跨平台开发工具Flutter
 =======
+
+# 跨平台移动应用的发展历程
+* 1.Webview + Cordova（Phonegap）。第一代的跨平台应用基本上都是一个webview里面跑HTML，优点是简单，跟前端开发并无太大的差异，直接写HTML代码就行了，缺点就是webview性能一般，应用不够流畅。
+* 2.ReactNative\Weex。 第二代跨平台应用是以Facebook的ReactNative为代表的  **原生 + JS桥** 应用，也是目前市场上主要得跨平台解决方案，原理是把JS翻译成原生代码，总体来说比单纯的webview跑HTML性能高出不少。但是还是受限制于 **JS桥** 的性能瓶颈。
+* 3.Flutter。Flutter是以dart语言为基础的新一代移动应用开发框架。可以说是真正做到了一套代码，三端运行，同时也解决了上面JS桥性能瓶颈的问题。Flutter是一个Hybird但又不像Hybird的框架，先不管将来Flutter会发展的怎样，就它带来了技术的变更以及对目前行业中一些优秀解决方案的整合，都是值得我们去学习了解的。
 
 
 # 什么是Flutter？
-[Flutter](https://flutter.io/)是谷歌新一代的开源移动端开发平台，同时支持 iOS, Android。
+[Flutter](https://flutter.io/)是谷歌新一代的开源移动端开发平台，同时支持 iOS, Android。Flutter采用dart语言开发，[dart](https://baike.baidu.com/item/DART/22500518?fr=aladdin)语法跟JS比较像，对于web开发者来说学习dart难度不是很大，看个两天文档就可以开撸了。
+[dart文档](https://www.dartlang.org/)
 
 # Flutter有哪些特点
 * 1.更快的开发速度--------支持热更新
@@ -92,3 +98,5 @@ Flutter提供了一些常用的基础控件：
 * ListView, 列表渲染控件， 相当于react开发里面的 Array.map(renderComponent)
 ......... Flutter的控件实在是太多了，想要全部了解得花好多时间。总的来说，个人觉得Flutter写UI没有web那么灵活，但是更加高级（Fultter已经写好了大部分样式；web啥样式都得自己封装，基础样式惨不忍睹），同样的UI跟交互，Flutter写下来Widget tree 可能比 web dom tree复杂好几倍。写Flutter页面，可能一不小心一个文件就写了好几百行。
 
+
+# Flutter
