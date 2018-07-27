@@ -111,7 +111,13 @@ Flutter提供了一些常用的基础控件：
 ## 3.打包后的包体积
   写完demo后，打了一个ios的包，发现包的大小居然有30M，可是我只写了300行不到的代码，相比对ReactNative（只有几M） ,Flutter打包的体积要大上不少，希望以后能够优化一下。
 
+## 4.生态圈
+  Flutter生态圈目前不太繁荣，好用的依赖包较少。不过这个好像也不算什么大问题，毕竟Flutter1.0才刚刚发布，从关注度上来说Flutter已经足够火热，在跨平台的整体趋势下，Flutter肯定会走得更远。
 
 
 # 开发Flutter的编辑器推荐
   不推荐使用vscode（缩进有点问题）、sublime这样的轻型编辑器，一是一旦嵌套层数过深，修改起来太麻烦，二是经常要增加包裹控件跟减少控件，手动操作太容易出问题。intelliJ跟Andriod Studio开发Flutter应用要更加方便，可以使用Flutter Inspector(UI inspector)、Flutter outline(可以在选中的控件上增加、删减控件，大大减少了层层嵌套的控件修改时的难度)、保存的时候自动热加载（不用再命令行里手动reload）、代码提示（可以显示Widget所有属性）。
+
+
+# Flutter展望
+  不仅仅可以开发ios跟Andriod，Flutter还是谷歌新系统Fuchsia的用户界面基础，万一以后Fuchsia取代Andriod了，Flutter的发展将更加迅猛。因此，大家没事的时候可以多看看Flutter文档，放下技术之争，多写写demo，技多不压身嘛。
