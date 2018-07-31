@@ -13,6 +13,7 @@ categories: web前端,大前端,native app, web开发者眼中的Flutter
 * 3.Flutter。Flutter是以dart语言为基础的新一代移动应用开发框架。可以说是真正做到了一套代码，三端运行，同时也解决了上面JS桥性能瓶颈的问题。Flutter是一个Hybird但又不像Hybird的框架，先不管将来Flutter会发展的怎样，就它带来了技术的变更以及对目前行业中一些优秀解决方案的整合，都是值得我们去学习了解的。
 
 
+
 # 什么是Flutter？
 [Flutter](https://flutter.io/)是谷歌新一代的开源移动端开发平台，同时支持 iOS, Android。Flutter采用dart语言开发，[dart](https://baike.baidu.com/item/DART/22500518?fr=aladdin)语法跟JS比较像，对于web开发者来说学习dart难度不是很大，看个两天文档就可以开撸了。
 [dart文档](https://www.dartlang.org/)
